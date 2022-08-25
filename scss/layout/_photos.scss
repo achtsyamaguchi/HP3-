@@ -1,0 +1,28 @@
+@use "../global" as *;
+
+.photos {
+  margin-top: 4%;
+  padding: 2% 6%;
+  &_title {
+    color: $black;
+    font-size: clamp(7rem,5.71vw,8rem);
+    text-align: center;
+  }
+}
+
+
+
+.spring_title_color {
+    color: $pink;
+    font-size: 5rem;
+}
+.slider_photos {
+  margin: 10rem auto;
+}
+.slider_item {
+  background-color: aqua;
+  img {
+    width: 25%;
+  }
+}
+

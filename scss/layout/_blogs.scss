@@ -1,0 +1,47 @@
+@use "../global" as *;
+
+.blogs {
+  position: relative;
+  margin-top: 5%;
+  padding: 2% 6%;
+  &_wrapper {
+    margin-bottom: 30%;
+  }
+  &_right_img {
+    display: flex;
+    flex-direction: row-reverse;
+}
+  &_item {
+    position: relative;
+  }
+  
+  &_title {
+    color: $black;
+    font-size: clamp(7rem,5.71vw,8rem);
+    text-align: center;
+    margin-bottom: 5%;
+  }
+  &_img {
+    width: 80%;
+    margin-bottom: 12%;
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+  
+  &_txt {
+    position: absolute;
+    top: 40%;
+    left: 7%;
+    font-size: clamp(2rem,3.21vw,4.5rem);
+    filter: drop-shadow(2px 2px 1px $white);
+    &_right {
+      left: unset;
+      right: 7%;
+    }
+    &_sub {
+      font-size: clamp(1.4rem,1.78vw,2.5rem);
+    }
+  }
+}
