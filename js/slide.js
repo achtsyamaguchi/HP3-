@@ -3,9 +3,9 @@
 $(function () {
   $('.slider')
   // 最初のスライドに"add-animation"のclassを付ける(data-slick-index="0"が最初のスライドを指す)
-  .on("init", function () {
-    $('.slick-slide[data-slick-index="0"]').addClass("add-animation");
-  })
+  // .on("init", function () {
+  //   $('.slick-slide[data-slick-index="0"]').addClass("add-animation");
+  // })
   // 通常のオプション
   .slick({
     autoplay: true, // 自動再生ON

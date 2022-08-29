@@ -36,15 +36,15 @@ $(function () {
 
   //photosの4枚横スライドショー
     $('.slide_photos').slick({
-      autoplaySpeed: 2700, 
+      autoplaySpeed: 5000, 
       speed: 1500, 
       autoplay: true, 
       infinite: true, 
-      slideToShow: 4, 
-      slideToScroll: 1, 
+      slidesToShow: 4, 
+      slidesToScroll: 4, 
       arrows: true, 
-      prevArrow: '<div class="slick_prev"></div>', 
-      nextArrow: '<div class="slick_next"></div>', 
+      prevArrow: '<div class="slick-prev"></div>', 
+      nextArrow: '<div class="slick-next"></div>', 
       dots: true, 
       pauseOnFocus: false, 
       pauseOnHover: false, 
@@ -67,4 +67,5 @@ $(function () {
     }
     ]
   })
+
 });

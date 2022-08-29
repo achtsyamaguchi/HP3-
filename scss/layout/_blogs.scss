@@ -4,6 +4,9 @@
   position: relative;
   margin-top: 5%;
   padding: 2% 6%;
+  @include mq(TB2) {
+    margin-top: 10%;
+  }
   &_wrapper {
     margin-bottom: 30%;
   }
@@ -17,9 +20,12 @@
   
   &_title {
     color: $black;
-    font-size: clamp(7rem,5.71vw,8rem);
+    font-size: clamp(6rem,5.71vw,8rem);
     text-align: center;
     margin-bottom: 5%;
+    @include mq(TB2) {
+      margin-bottom: 10%;
+    }
   }
   &_img {
     width: 80%;
@@ -36,6 +42,26 @@
     left: 7%;
     font-size: clamp(2rem,3.21vw,4.5rem);
     filter: drop-shadow(2px 2px 1px $white);
+    p {
+      position: relative;
+      padding-bottom: 5%;
+      color: $black;
+      &:hover::after {
+        transform: scale(1, 1);
+      }
+      &:after {
+        content: "";
+        width: 80%;
+        height: 2px;
+        background: $black;
+        position: absolute;
+        bottom: 0;
+        left: 10%;
+        transition: all .3s;
+        transform: scale(0,1);//x方向とY
+        transform-origin: center top;//起点を決める
+    }
+    }
     &_right {
       left: unset;
       right: 7%;

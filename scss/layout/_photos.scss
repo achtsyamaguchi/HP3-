@@ -1,29 +1,164 @@
 @use "../global" as *;
 
 .photos {
+  position: relative;
   margin-top: 4%;
-  padding: 2% 6%;
+  padding: 3% 6%;
   &_title {
     color: $black;
     font-size: clamp(7rem,5.71vw,8rem);
     text-align: center;
+    margin-bottom: 7%;
+    @include mq(SP2) {
+      margin-bottom: 20%;
+      margin-top: 10%;
+    }
   }
 }
 
-
-
 .spring_title_color {
     color: $pink;
-    font-size: 5rem;
+    font-size: clamp(4rem,3.57vw,5rem);
+    margin-bottom: 3%;
+    @include mq(SP2) {
+      margin-bottom: 12%;
+    }
 }
-.slider_photos {
-  margin: 10rem auto;
+
+.slide_photos .slick-slide {
+  margin: 0 15px;
+  @include mq(SP2) {
+    margin: 0 40px;
+  }
 }
-.slider_item {
-  background-color: aqua;
+
+.slid_txt_inner {
+  padding: 7% 5%;
+  font-size: clamp(1.6rem,1.42vw,2rem);
+  box-shadow: (3px 3px 20px $grey);
+}
+
+.slide_txt1 {
+  margin-bottom: 25%;
+}
+
+.slide_item {
+  width: 25%;
+  img {width: 100%;};
+  margin-bottom: 5%;
+}
+//スライドドット------------------------------------
+.spring .slick-dots li.slick-active button:before {
+  color: $pink;
+}
+.summer .slick-dots li.slick-active button:before {
+  color: $yellow;
+}
+.autumn .slick-dots li.slick-active button:before {
+  color: $brown;
+}
+.winter .slick-dots li.slick-active button:before {
+  color: $blue;
+}
+
+.slick-dots li {
+  width: 5px;
+}
+//スライド矢印--------------------------------------
+.slick-arrow {
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  padding: 0;
+  width: 20px;
+  height: 38px;
   
-  img {
-    width: 25%;
+  z-index: 1;
+  transition: opacity 0.5s;
+  z-index: 1;
+}
+.slick-arrow:hover {
+  opacity: 0.7;
+}
+
+.slick-next::before,
+.slick-next::after,
+.slick-prev::before,
+.slick-prev::after {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  content: "";
+  vertical-align: middle;
+  
+}
+.slick-next::after,
+.slick-prev::after {
+  width: 15px;
+  height: 15px;
+  border-top: 2px solid $grey2;
+  border-right: 2px solid $grey2;
+@include mq(TB2) {
+  width: 10px;
+  height: 10px;
+}
+}
+
+/* next */
+
+.slick-next {
+  right: -26px;
+  @include mq(SP2) {
+    right: 0;
+  }
+}
+.slick-next::after {
+  right: 4px;
+  transform: rotate(45deg);
+}
+
+/* prev */
+
+.slick-prev {
+  left: -26px;
+  @include mq(SP2) {
+    left: 0;
+  }
+}
+.slick-prev::after {
+  left: 4px;
+  transform: rotate(-135deg);
+}
+
+
+//summer---------------------
+.summer_title_color {
+  color: $yellow;
+  font-size: clamp(4rem,3.57vw,5rem);
+  margin-bottom: 3%;
+}
+
+// autumn--------------------
+.autumn_title_color {
+  color: $brown;
+  font-size: clamp(4rem,3.57vw,5rem);
+  margin-bottom: 3%;
+}
+
+// winter----------------------
+.winter_title_color {
+  color: $blue;
+  font-size: clamp(4rem,3.57vw,5rem);
+  margin-bottom: 3%;
+}
+
+.photos_wrapper {
+  margin-bottom: 15%;
+  @include mq(TB2) {
+    margin-bottom: 30%;
   }
 }
 

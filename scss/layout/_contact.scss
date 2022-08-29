@@ -19,22 +19,31 @@
     margin-bottom: 5%;
     @include mq(TB) {
       padding: unset;
-      padding: 7% 5% 2% 5%
+      padding: 7% 5% 4% 5%
     }
     .send_btn {
-      width: max(17%,100px);
-      background-color: $black;
-      text-align: center;
-      padding: 1.5% 0;
+      border: 1px solid $black;
       margin: 0 auto;
-      @include mq(TB) {
-        margin-bottom: 7%;
+      width: 14rem;
+      height: 4rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: $black;
+      background: $black;
+      color: $white;
+      font-size: clamp(1.4rem,1.42vw,2rem);
+      transition: .4s;
+      &:hover {
+        color: $black;
+        background: $white;
+        transition: .4s;
       }
       a {
-        font-weight: 100;
-        font-size: clamp(1.2rem,1.78vw,2rem);
+        display: block;
       }
     }
+    
   }
   }
   table {
@@ -86,12 +95,9 @@
 }
 
 .copy {
-//  position: absolute;
-// bottom: 5%;
-// left: 50%;
-// transform: translateX(-50%);
 &_contact {
   color: $white;
+  margin-bottom: 3%;
 }
 }
 
