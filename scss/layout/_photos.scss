@@ -5,13 +5,14 @@
   margin-top: 4%;
   padding: 3% 6%;
   &_title {
+    
     color: $black;
     font-size: clamp(7rem,5.71vw,8rem);
     text-align: center;
     margin-bottom: 7%;
     @include mq(SP2) {
       margin-bottom: 20%;
-      margin-top: 10%;
+      margin-top: 15%;
     }
   }
 }
@@ -21,7 +22,8 @@
     font-size: clamp(4rem,3.57vw,5rem);
     margin-bottom: 3%;
     @include mq(SP2) {
-      margin-bottom: 12%;
+      margin-bottom: 15%;
+      padding-left: 10%;
     }
 }
 
@@ -139,6 +141,10 @@
   color: $yellow;
   font-size: clamp(4rem,3.57vw,5rem);
   margin-bottom: 3%;
+  @include mq(SP2) {
+    padding-left: 10%;
+    margin-bottom: 15%;
+  }
 }
 
 // autumn--------------------
@@ -146,6 +152,10 @@
   color: $brown;
   font-size: clamp(4rem,3.57vw,5rem);
   margin-bottom: 3%;
+  @include mq(SP2) {
+    padding-left: 10%;
+    margin-bottom: 15%;
+  }
 }
 
 // winter----------------------
@@ -153,6 +163,10 @@
   color: $blue;
   font-size: clamp(4rem,3.57vw,5rem);
   margin-bottom: 3%;
+  @include mq(SP2) {
+    padding-left: 10%;
+    margin-bottom: 15%;
+  }
 }
 
 .photos_wrapper {

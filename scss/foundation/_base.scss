@@ -8,6 +8,9 @@
 body {
   margin: 0 auto;
   font-family: 'Noto Serif JP', serif;
+  
+  font-weight: 700;
+  font-style: normal;
   font-size: 62.5%;
 }
 
@@ -31,9 +34,10 @@ a {
 }
 
 .section_title {
-  font-family: 'Allura';
+  font-family: gautreaux,sans-serif;
+  // font-family: 'Allura';
   color: $white;
-  font-weight: 100;
+  font-weight: bold;
 }
 
 .btn {
@@ -128,8 +132,8 @@ a {
   top: 50%;
   left: 50%;
   transform: translateX(-50%) translateY(-50%);
-  h1 {
-    font-size: 8rem;
+  .top_title {
+    font-size: clamp(3rem,5.71vw,8rem);
     text-align: center;
   }
   

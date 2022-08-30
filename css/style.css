@@ -6,6 +6,8 @@
 body {
   margin: 0 auto;
   font-family: "Noto Serif JP", serif;
+  font-weight: 700;
+  font-style: normal;
   font-size: 62.5%;
 }
 
@@ -28,9 +30,9 @@ a {
 }
 
 .section_title {
-  font-family: "Allura";
+  font-family: gautreaux, sans-serif;
   color: #fff;
-  font-weight: 100;
+  font-weight: bold;
 }
 
 .btn {
@@ -125,8 +127,8 @@ a {
   left: 50%;
   transform: translateX(-50%) translateY(-50%);
 }
-.main_title h1 {
-  font-size: 8rem;
+.main_title .top_title {
+  font-size: clamp(3rem, 5.71vw, 8rem);
   text-align: center;
 }
 .main_title_sub {
@@ -382,6 +384,9 @@ input, select {
   width: 80%;
   margin-bottom: 12%;
 }
+.blogs_img:hover {
+  opacity: 0.5;
+}
 .blogs_img img {
   width: 100%;
   height: 100%;
@@ -403,12 +408,12 @@ input, select {
 }
 .blogs_txt p:after {
   content: "";
-  width: 80%;
+  width: 100%;
   height: 2px;
   background: #333;
   position: absolute;
   bottom: 0;
-  left: 10%;
+  left: 0;
   transition: all 0.3s;
   transform: scale(0, 1);
   transform-origin: center top;
@@ -426,6 +431,12 @@ input, select {
   background: linear-gradient(to bottom left, rgb(253, 104, 113), #fff);
   padding: 13% 0;
 }
+.contact_title {
+  font-size: clamp(3rem, 5.7vw, 8rem);
+  margin-bottom: 5%;
+  color: #333;
+  text-align: center;
+}
 @media screen and (max-width:800px) {
   .contact_title {
     padding-bottom: 15%;
@@ -440,6 +451,7 @@ input, select {
 }
 @media screen and (max-width:800px) {
   .contact_wrapper {
+    width: 70%;
     padding: unset;
     padding: 7% 5% 4% 5%;
   }
@@ -447,7 +459,7 @@ input, select {
 .contact_wrapper .send_btn {
   border: 1px solid #333;
   margin: 0 auto;
-  width: 14rem;
+  width: 13rem;
   height: 4rem;
   display: flex;
   justify-content: center;
@@ -513,13 +525,6 @@ table textarea {
   background-color: rgb(237, 237, 237);
 }
 
-.contact_title {
-  font-size: clamp(4rem, 5.7vw, 8rem);
-  margin-bottom: 5%;
-  color: #333;
-  text-align: center;
-}
-
 .copy_contact {
   color: #fff;
   margin-bottom: 3%;
@@ -539,7 +544,7 @@ table textarea {
 @media screen and (max-width:479px) {
   .photos_title {
     margin-bottom: 20%;
-    margin-top: 10%;
+    margin-top: 15%;
   }
 }
 
@@ -550,7 +555,8 @@ table textarea {
 }
 @media screen and (max-width:479px) {
   .spring_title_color {
-    margin-bottom: 12%;
+    margin-bottom: 15%;
+    padding-left: 10%;
   }
 }
 
@@ -681,17 +687,35 @@ table textarea {
   font-size: clamp(4rem, 3.57vw, 5rem);
   margin-bottom: 3%;
 }
+@media screen and (max-width:479px) {
+  .summer_title_color {
+    padding-left: 10%;
+    margin-bottom: 15%;
+  }
+}
 
 .autumn_title_color {
   color: rgb(187, 153, 64);
   font-size: clamp(4rem, 3.57vw, 5rem);
   margin-bottom: 3%;
 }
+@media screen and (max-width:479px) {
+  .autumn_title_color {
+    padding-left: 10%;
+    margin-bottom: 15%;
+  }
+}
 
 .winter_title_color {
   color: rgb(172, 207, 226);
   font-size: clamp(4rem, 3.57vw, 5rem);
   margin-bottom: 3%;
+}
+@media screen and (max-width:479px) {
+  .winter_title_color {
+    padding-left: 10%;
+    margin-bottom: 15%;
+  }
 }
 
 .photos_wrapper {
@@ -753,14 +777,16 @@ table textarea {
 }
 
 .pagenation {
+  width: 80%;
   text-align: center;
+  margin: 0 auto;
 }
 
 .prev,
 .next {
   position: relative;
   display: inline-block;
-  font-size: clamp(1.6rem, 1.78vw, 2.5rem);
+  font-size: clamp(1.4rem, 1.78vw, 2.5rem);
   vertical-align: baseline;
   color: #333;
 }
@@ -784,7 +810,7 @@ table textarea {
   border-top: 1px solid #333;
   border-left: 1px solid #333;
   transform: rotate(-45deg);
-  margin-top: -4%;
+  margin-top: -5px;
 }
 
 .next::before {
@@ -798,11 +824,11 @@ table textarea {
   border-top: 1px solid #333;
   border-right: 1px solid #333;
   transform: rotate(45deg);
-  margin-top: -4%;
+  margin-top: -5px;
 }
 
 .send_blogs {
-  font-size: clamp(1.6rem, 1.78vw, 2.5rem);
+  font-size: clamp(1.4rem, 1.78vw, 2.5rem);
   margin: 0 10%;
   color: #333;
 }

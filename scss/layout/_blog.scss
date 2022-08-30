@@ -48,13 +48,15 @@ bottom: 1%;
 
 
 .pagenation {
+  width: 80%;
   text-align: center;
+  margin: 0 auto;
 }
 .prev,
 .next {
   position: relative;
   display: inline-block;
-  font-size: clamp(1.6rem,1.78vw,2.5rem);
+  font-size: clamp(1.4rem,1.78vw,2.5rem);
   vertical-align:baseline;
   color: $black;
 }
@@ -77,7 +79,7 @@ bottom: 1%;
   border-top: 1px solid $black;
   border-left: 1px solid $black;
   transform: rotate(-45deg);
-  margin-top: -4%;
+  margin-top: -5px;
 }
 .next::before {
   position: absolute;
@@ -90,10 +92,10 @@ bottom: 1%;
   border-top: 1px solid $black;
   border-right: 1px solid $black;
   transform: rotate(45deg);
-  margin-top: -4%;
+  margin-top: -5px;
 }
 .send_blogs {
-  font-size: clamp(1.6rem,1.78vw,2.5rem);
+  font-size: clamp(1.4rem,1.78vw,2.5rem);
   margin: 0 10%;
   color: $black;
 }
