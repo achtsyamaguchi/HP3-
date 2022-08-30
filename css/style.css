@@ -76,6 +76,11 @@ a {
     padding: 4% 6%;
   }
 }
+@media screen and (max-width:375px) {
+  .header_inner {
+    padding-top: 10%;
+  }
+}
 .header_ul {
   display: flex;
   justify-content: flex-end;
@@ -431,6 +436,16 @@ input, select {
   background: linear-gradient(to bottom left, rgb(253, 104, 113), #fff);
   padding: 13% 0;
 }
+@media screen and (max-width:645px) {
+  .contact {
+    height: 100vh;
+  }
+}
+@media screen and (max-width:375px) {
+  .contact {
+    padding-top: 25%;
+  }
+}
 .contact_title {
   font-size: clamp(3rem, 5.7vw, 8rem);
   margin-bottom: 5%;
@@ -528,6 +543,12 @@ table textarea {
 .copy_contact {
   color: #fff;
   margin-bottom: 3%;
+  bottom: 1%;
+}
+@media screen and (max-width:425px) {
+  .copy_contact {
+    bottom: 5%;
+  }
 }
 
 .photos {
@@ -541,7 +562,7 @@ table textarea {
   text-align: center;
   margin-bottom: 7%;
 }
-@media screen and (max-width:479px) {
+@media screen and (max-width:480px) {
   .photos_title {
     margin-bottom: 20%;
     margin-top: 15%;
@@ -553,7 +574,7 @@ table textarea {
   font-size: clamp(4rem, 3.57vw, 5rem);
   margin-bottom: 3%;
 }
-@media screen and (max-width:479px) {
+@media screen and (max-width:480px) {
   .spring_title_color {
     margin-bottom: 15%;
     padding-left: 10%;
@@ -563,7 +584,7 @@ table textarea {
 .slide_photos .slick-slide {
   margin: 0 15px;
 }
-@media screen and (max-width:479px) {
+@media screen and (max-width:480px) {
   .slide_photos .slick-slide {
     margin: 0 40px;
   }
@@ -656,7 +677,7 @@ table textarea {
 .slick-next {
   right: -26px;
 }
-@media screen and (max-width:479px) {
+@media screen and (max-width:480px) {
   .slick-next {
     right: 0;
   }
@@ -671,7 +692,7 @@ table textarea {
 .slick-prev {
   left: -26px;
 }
-@media screen and (max-width:479px) {
+@media screen and (max-width:480px) {
   .slick-prev {
     left: 0;
   }
@@ -687,7 +708,7 @@ table textarea {
   font-size: clamp(4rem, 3.57vw, 5rem);
   margin-bottom: 3%;
 }
-@media screen and (max-width:479px) {
+@media screen and (max-width:480px) {
   .summer_title_color {
     padding-left: 10%;
     margin-bottom: 15%;
@@ -699,7 +720,7 @@ table textarea {
   font-size: clamp(4rem, 3.57vw, 5rem);
   margin-bottom: 3%;
 }
-@media screen and (max-width:479px) {
+@media screen and (max-width:480px) {
   .autumn_title_color {
     padding-left: 10%;
     margin-bottom: 15%;
@@ -711,7 +732,7 @@ table textarea {
   font-size: clamp(4rem, 3.57vw, 5rem);
   margin-bottom: 3%;
 }
-@media screen and (max-width:479px) {
+@media screen and (max-width:480px) {
   .winter_title_color {
     padding-left: 10%;
     margin-bottom: 15%;
@@ -741,7 +762,7 @@ table textarea {
     padding-bottom: 30%;
   }
 }
-@media screen and (max-width:479px) {
+@media screen and (max-width:480px) {
   .blog {
     margin-top: 15%;
   }

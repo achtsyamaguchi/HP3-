@@ -1,11 +1,16 @@
 @use "../global" as *;
 
-
-
 .contact {
   position: relative;
   background: linear-gradient(to bottom left,rgba(253, 104, 113, 1),#fff);
   padding: 13% 0;
+  
+  @include mq(TB2) {
+    height: 100vh;
+  }
+  @include mq(SP-s) {
+    padding-top: 25%;
+  }
   &_title {
     font-size: clamp(3rem,5.7vw,8rem);
     margin-bottom: 5%;
@@ -91,15 +96,16 @@
       height: 18rem;
       background-color: $grey;
     }
-    
 }
-
-
 
 .copy {
 &_contact {
   color: $white;
   margin-bottom: 3%;
+  bottom: 1%;
+  @include mq(SP) {
+  bottom: 5%; 
+  }
 }
 }
 
