@@ -56,10 +56,6 @@ a {
   background-position: 90% 50%;
 }
 
-.wrapper {
-  position: relative;
-}
-
 .header {
   width: 100%;
   position: fixed;
@@ -123,6 +119,10 @@ a {
 }
 .add-animation {
   animation: fadezoom 5s 0s forwards;
+}
+
+.wrapper {
+  position: relative;
 }
 
 .main_title {
@@ -250,7 +250,8 @@ a {
 
 .copy {
   position: absolute;
-  bottom: 1%;
+  color: #333;
+  bottom: 2%;
   left: 50%;
   transform: translateX(-50%);
   font-size: clamp(1rem, 1.14vw, 1.6rem);
@@ -355,7 +356,6 @@ input, select {
 }
 
 .blogs {
-  position: relative;
   margin-top: 5%;
   padding: 2% 6%;
 }
@@ -367,12 +367,12 @@ input, select {
 .blogs_wrapper {
   margin-bottom: 30%;
 }
-.blogs_right_img {
-  display: flex;
-  flex-direction: row-reverse;
-}
 .blogs_item {
   position: relative;
+}
+.blogs_item:nth-of-type(2n+1) {
+  display: flex;
+  flex-direction: row-reverse;
 }
 .blogs_title {
   color: #333;
@@ -400,10 +400,14 @@ input, select {
   position: absolute;
   top: 40%;
   left: 7%;
-  font-size: clamp(2rem, 3.21vw, 4.5rem);
+  font-size: clamp(1.6rem, 3.21vw, 4.5rem);
   filter: drop-shadow(2px 2px 1px #fff);
 }
+.blogs_txt:nth-of-type(2n) {
+  right: 0;
+}
 .blogs_txt p {
+  display: inline-block;
   position: relative;
   padding-bottom: 5%;
   color: #333;
@@ -428,17 +432,28 @@ input, select {
   right: 7%;
 }
 .blogs_txt_sub {
-  font-size: clamp(1.4rem, 1.78vw, 2.5rem);
+  font-size: clamp(1.2rem, 1.78vw, 2.5rem);
+}
+.blogs .blogs_item:nth-of-type(2n) p {
+  right: -70%;
+}
+
+.wrapper {
+  position: relative;
 }
 
 .contact {
-  position: relative;
   background: linear-gradient(to bottom left, rgb(253, 104, 113), #fff);
-  padding: 13% 0;
+  padding: 15% 0;
 }
-@media screen and (max-width:645px) {
+@media screen and (max-width:800px) {
   .contact {
-    height: 100vh;
+    padding-bottom: 20%;
+  }
+}
+@media screen and (max-width:425px) {
+  .contact {
+    min-height: 100vh;
   }
 }
 @media screen and (max-width:375px) {
@@ -462,7 +477,6 @@ input, select {
   width: 60%;
   margin: 0 auto;
   padding: 5% 3% 2% 3%;
-  margin-bottom: 5%;
 }
 @media screen and (max-width:800px) {
   .contact_wrapper {
@@ -536,19 +550,12 @@ table td input {
 }
 table textarea {
   width: 100%;
-  height: 18rem;
+  height: 15vh;
   background-color: rgb(237, 237, 237);
 }
 
-.copy_contact {
+.other_contact {
   color: #fff;
-  margin-bottom: 3%;
-  bottom: 1%;
-}
-@media screen and (max-width:425px) {
-  .copy_contact {
-    bottom: 5%;
-  }
 }
 
 .photos {
@@ -752,19 +759,13 @@ table textarea {
   position: relative;
   width: 55%;
   margin: 0 auto;
-  margin-top: 9%;
+  margin-top: 3%;
   padding-bottom: 17%;
 }
 @media screen and (max-width:645px) {
   .blog {
     width: 90%;
-    margin-top: 12%;
     padding-bottom: 30%;
-  }
-}
-@media screen and (max-width:480px) {
-  .blog {
-    margin-top: 15%;
   }
 }
 .blog_img {
@@ -801,6 +802,10 @@ table textarea {
   width: 80%;
   text-align: center;
   margin: 0 auto;
+  font-size: clamp(1.4rem, 1.42vw, 2rem);
+}
+.pagenation a {
+  color: #333;
 }
 
 .prev,

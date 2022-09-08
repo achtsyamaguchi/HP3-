@@ -8,15 +8,16 @@
 body {
   margin: 0 auto;
   font-family: 'Noto Serif JP', serif;
-  
   font-weight: 700;
   font-style: normal;
   font-size: 62.5%;
+  
 }
 
 html {
   font-size: 62.5%;
   margin: 0 auto;
+  
 }
 
 img {
@@ -64,9 +65,7 @@ a {
   
 }
 // header---------------------
-.wrapper {
-  position: relative;
-}
+
 
 .header {
   width: 100%;
@@ -106,6 +105,7 @@ a {
 .slider {
   position: relative;
   overflow: hidden;
+  
   .slick_img {
     width: 100%;
     height: 100vh;
@@ -129,6 +129,9 @@ a {
   animation: fadezoom 5s 0s forwards;//add-animationクラスがついたら
 }
 
+.wrapper {
+  position: relative;
+}
 .main_title {
   z-index: 2;
   position: absolute;
@@ -242,7 +245,8 @@ a {
 }
 .copy {
   position: absolute;
-  bottom: 1%;
+  color: $black;
+  bottom: 2%;
   left: 50%;
   transform: translateX(-50%);
   font-size: clamp(1rem,1.14vw,1.6rem);
