@@ -104,8 +104,12 @@
 
 
 .other_contact {
+  position: absolute;
+  bottom: 2%;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: clamp(1rem,1.14vw,1.6rem);
   color: $white;
-  
 }
 
 

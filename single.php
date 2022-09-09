@@ -1,5 +1,6 @@
 
 <?php get_header(); ?>
+<div class="wrapper">
 <section class="blog">
     <div class="blog_wrapper">
     <?php if (have_posts()) : while(have_posts()) : the_post(); ?>

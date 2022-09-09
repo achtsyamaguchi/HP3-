@@ -250,11 +250,11 @@ a {
 
 .copy {
   position: absolute;
-  color: #333;
   bottom: 2%;
   left: 50%;
   transform: translateX(-50%);
   font-size: clamp(1rem, 1.14vw, 1.6rem);
+  color: #333;
 }
 
 html, body, div, span, object, iframe,
@@ -555,6 +555,11 @@ table textarea {
 }
 
 .other_contact {
+  position: absolute;
+  bottom: 2%;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: clamp(1rem, 1.14vw, 1.6rem);
   color: #fff;
 }
 

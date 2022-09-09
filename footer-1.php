@@ -1,10 +1,10 @@
-<footer class="copy">
-  
+<footer class="other_contact">
+
     <p>&COPY;SHIKI ALL<span>rights reserved</span></p>
-  
+
 </footer>
 </div>
-  
+
 
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>

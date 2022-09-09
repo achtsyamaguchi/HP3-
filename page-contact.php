@@ -1,4 +1,5 @@
 <?php get_header(); ?>
+
 <div class="wrapper">
 <section class="contact">
     <div class="contact_wrapper">
@@ -34,4 +35,4 @@
 
 
 
-<?php get_footer(); ?>
+<?php get_footer("1"); ?>
