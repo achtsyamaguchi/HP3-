@@ -1,8 +1,9 @@
 <?php get_header(); ?>
-<div class="wrapper">
+<!-- <div class="wrapper"> -->
+  <div class="wrapper">
   <div class="photos">
     <h1 class="section_title photos_title">Photos</h1>
-    <div class="photos_wrapper">
+    <div class="photos_inner">
       <!-- spring--------------- -->
       <section class="spring">
       <h2 class="section_title spring_title_color">Spring</h2>

@@ -1,11 +1,11 @@
 @use "../global" as *;
 
+
 .photos {
-  position: relative;
+  // position: relative;
   margin-top: 4%;
   padding: 3% 6%;
   &_title {
-    
     color: $black;
     font-size: clamp(7rem,5.71vw,8rem);
     text-align: center;
@@ -64,8 +64,9 @@
 }
 
 .slick-dots li {
-  width: 5px;
+  width: 5px!important;
 }
+
 //スライド矢印--------------------------------------
 .slick-arrow {
   display: block;
@@ -74,9 +75,8 @@
   bottom: 0;
   margin: auto;
   padding: 0;
-  width: 20px;
+  width: 18px;
   height: 38px;
-  
   z-index: 1;
   transition: opacity 0.5s;
   z-index: 1;
@@ -99,8 +99,8 @@
 }
 .slick-next::after,
 .slick-prev::after {
-  width: 15px;
-  height: 15px;
+  width: 13px;
+  height: 13px;
   border-top: 2px solid $grey2;
   border-right: 2px solid $grey2;
 @include mq(TB2) {
@@ -112,26 +112,26 @@
 /* next */
 
 .slick-next {
-  right: -26px;
+  right: -20px;
   @include mq(SP2) {
-    right: 0;
+    right: 12px!important;
   }
 }
 .slick-next::after {
-  right: 4px;
+  right: 6px;
   transform: rotate(45deg);
 }
 
 /* prev */
 
 .slick-prev {
-  left: -26px;
+  left: -20px;
   @include mq(SP2) {
-    left: 0;
+    left: 12px!important;
   }
 }
 .slick-prev::after {
-  left: 4px;
+  left: 6px;
   transform: rotate(-135deg);
 }
 
@@ -169,7 +169,7 @@
   }
 }
 
-.photos_wrapper {
+.photos_inner {
   margin-bottom: 15%;
   @include mq(TB2) {
     margin-bottom: 30%;

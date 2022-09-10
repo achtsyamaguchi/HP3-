@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 <div class="wrapper">
-<div class="blogs">
+  <div class="blogs">
     <h1 class="section_title blogs_title">Blogs</h1>
 
     <div class="blogs_wrapper">

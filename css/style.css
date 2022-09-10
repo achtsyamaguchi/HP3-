@@ -35,6 +35,10 @@ a {
   font-weight: bold;
 }
 
+.wrapper {
+  position: relative;
+}
+
 .btn {
   width: 20rem;
   margin: 0 auto;
@@ -63,8 +67,8 @@ a {
   z-index: 50;
 }
 .header_inner {
-  padding: 2% 4%;
   width: 100%;
+  padding: 2% 4%;
   margin: 0 auto;
 }
 @media screen and (max-width:645px) {
@@ -438,22 +442,14 @@ input, select {
   right: -70%;
 }
 
-.wrapper {
-  position: relative;
-}
-
 .contact {
   background: linear-gradient(to bottom left, rgb(253, 104, 113), #fff);
   padding: 15% 0;
+  min-height: 100vh;
 }
 @media screen and (max-width:800px) {
   .contact {
     padding-bottom: 20%;
-  }
-}
-@media screen and (max-width:425px) {
-  .contact {
-    min-height: 100vh;
   }
 }
 @media screen and (max-width:375px) {
@@ -564,7 +560,6 @@ table textarea {
 }
 
 .photos {
-  position: relative;
   margin-top: 4%;
   padding: 3% 6%;
 }
@@ -637,7 +632,7 @@ table textarea {
 }
 
 .slick-dots li {
-  width: 5px;
+  width: 5px !important;
 }
 
 .slick-arrow {
@@ -647,7 +642,7 @@ table textarea {
   bottom: 0;
   margin: auto;
   padding: 0;
-  width: 20px;
+  width: 18px;
   height: 38px;
   z-index: 1;
   transition: opacity 0.5s;
@@ -672,8 +667,8 @@ table textarea {
 
 .slick-next::after,
 .slick-prev::after {
-  width: 15px;
-  height: 15px;
+  width: 13px;
+  height: 13px;
   border-top: 2px solid rgba(0, 0, 0, 0.59);
   border-right: 2px solid rgba(0, 0, 0, 0.59);
 }
@@ -687,31 +682,31 @@ table textarea {
 
 /* next */
 .slick-next {
-  right: -26px;
+  right: -20px;
 }
 @media screen and (max-width:480px) {
   .slick-next {
-    right: 0;
+    right: 12px !important;
   }
 }
 
 .slick-next::after {
-  right: 4px;
+  right: 6px;
   transform: rotate(45deg);
 }
 
 /* prev */
 .slick-prev {
-  left: -26px;
+  left: -20px;
 }
 @media screen and (max-width:480px) {
   .slick-prev {
-    left: 0;
+    left: 12px !important;
   }
 }
 
 .slick-prev::after {
-  left: 4px;
+  left: 6px;
   transform: rotate(-135deg);
 }
 
@@ -751,11 +746,11 @@ table textarea {
   }
 }
 
-.photos_wrapper {
+.photos_inner {
   margin-bottom: 15%;
 }
 @media screen and (max-width:645px) {
-  .photos_wrapper {
+  .photos_inner {
     margin-bottom: 30%;
   }
 }
@@ -775,7 +770,7 @@ table textarea {
 }
 .blog_img {
   width: 100%;
-  margin-bottom: 5%;
+  margin-bottom: 8%;
 }
 .blog_img img {
   width: 100%;
@@ -790,9 +785,9 @@ table textarea {
   }
 }
 .blog_title h1 {
-  font-size: clamp(2rem, 2.85vw, 4rem);
+  font-size: clamp(1.8rem, 2.85vw, 4rem);
   line-height: 1.4;
-  margin-bottom: 5%;
+  margin-bottom: 8%;
 }
 .blog_txt {
   font-size: clamp(1.4rem, 1.78vw, 2.5rem);

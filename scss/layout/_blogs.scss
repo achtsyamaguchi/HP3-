@@ -17,7 +17,6 @@
 
   &_item {
     position: relative;
-    
     &:nth-of-type(2n+1) {
       display: flex;
       flex-direction: row-reverse;//----------------------------test
@@ -26,6 +25,7 @@
   
   &_title {
     color: $black;
+    // padding-top: 20%;
     font-size: clamp(6rem,5.71vw,8rem);
     text-align: center;
     margin-bottom: 5%;

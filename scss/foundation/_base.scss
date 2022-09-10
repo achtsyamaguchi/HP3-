@@ -11,13 +11,11 @@ body {
   font-weight: 700;
   font-style: normal;
   font-size: 62.5%;
-  
 }
 
 html {
   font-size: 62.5%;
   margin: 0 auto;
-  
 }
 
 img {
@@ -39,6 +37,10 @@ a {
   // font-family: 'Allura';
   color: $white;
   font-weight: bold;
+}
+
+.wrapper {
+  position: relative;
 }
 
 .btn {
@@ -74,8 +76,8 @@ a {
   z-index: 50;
   
   &_inner {
-    padding: 2% 4%;
     width: 100%;
+    padding: 2% 4%;
     margin: 0 auto;
     @include mq(TB2) {
       padding: 4% 6%;

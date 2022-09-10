@@ -19,7 +19,7 @@
   
 &_img {
   width: 100%;
-  margin-bottom: 5%;
+  margin-bottom: 8%;
   img {
     width: 100%;
     height: auto;
@@ -32,9 +32,9 @@
   }
 }
 &_title h1 {
-  font-size: clamp(2rem,2.85vw,4rem);
+  font-size: clamp(1.8rem,2.85vw,4rem);
   line-height: 1.4;
-  margin-bottom: 5%; 
+  margin-bottom: 8%; 
 }
 &_txt {
   font-size: clamp(1.4rem,1.78vw,2.5rem);
